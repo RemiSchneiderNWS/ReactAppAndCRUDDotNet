@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "cJMlC1oFKXceBGYbmY8gIVpTO3dtGzJ2ji5xtOGOPtMO9UEq3Q0GeiNTyQUz7bu9UyP7nBCRZBasq1seID/vLQ==",
+  "success": true,
+  "projectFilePath": "D:\\docker\\ReactAppAndCRUDDotNet\\ProtectedCRUD\\ProtectedCRUD\\ProtectedCRUD.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rémi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}
