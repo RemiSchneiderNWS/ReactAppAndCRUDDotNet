@@ -15,5 +15,6 @@ namespace ProtectedCRUD.context
         }
 
         public DbSet<matérial> material { get; set; }
+        public DbSet<User> user { get; set; }
     }
 }

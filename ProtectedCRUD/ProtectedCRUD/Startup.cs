@@ -30,6 +30,15 @@ namespace ProtectedCRUD
         {
             services.AddControllers();
 
+            services.AddDistributedMemoryCache();
+
+            services.AddSession(options =>
+            {
+                
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+
             services.AddDbContext<context.AppContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Connection")));
             services.AddCors(options => options.AddDefaultPolicy(x => x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin()));
         }
@@ -45,7 +54,8 @@ namespace ProtectedCRUD
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
+            app.UseCors();
+            app.UseSession();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
