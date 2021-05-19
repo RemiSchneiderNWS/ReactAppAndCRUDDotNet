@@ -11,6 +11,7 @@ import SignUp from "./components/SignUp";
 import Home from "./components/Home";
 import SignUpSuccess from "./components/SignUpSuccess";
 import { UserContext } from "./services/context/UserContext";
+import CrudObject from "./components/CrudObject";
 
 function App() {
   const theme = React.useMemo(
@@ -36,6 +37,11 @@ function App() {
                 <Navbar />
                 <header className="App-header">
                   <Route path="/" exact component={Home}></Route>
+                  <Route
+                    path="/CrudObject"
+                    exact
+                    component={CrudObject}
+                  ></Route>
                 </header>{" "}
               </Router>
             </div>
