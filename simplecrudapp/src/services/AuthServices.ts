@@ -25,6 +25,7 @@ export async function login(user: User) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        Accept: "application/json"
       },
       body: JSON.stringify({
         email: user.email,
@@ -38,3 +39,18 @@ export async function login(user: User) {
     const useridentificated = await response.json();
     return useridentificated ;
   }
+
+
+export async function getUserConnected() {
+  const requestOptions = {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json"
+    },
+   
+  };
+  const response = await fetch(serverAdress + "api/Users/userconnected",requestOptions);
+  const data = await response.json();
+  return data;
+}

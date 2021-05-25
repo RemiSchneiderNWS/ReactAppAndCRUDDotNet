@@ -61,3 +61,4 @@ D:\docker\ReactAppAndCRUDDotNet\ProtectedCRUD\ProtectedCRUD\obj\Debug\netcoreapp
 D:\docker\ReactAppAndCRUDDotNet\ProtectedCRUD\ProtectedCRUD\obj\Debug\netcoreapp3.1\ProtectedCRUD.genruntimeconfig.cache
 D:\docker\ReactAppAndCRUDDotNet\ProtectedCRUD\ProtectedCRUD\bin\Debug\netcoreapp3.1\Humanizer.dll
 D:\docker\ReactAppAndCRUDDotNet\ProtectedCRUD\ProtectedCRUD\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\docker\ReactAppAndCRUDDotNet\ProtectedCRUD\ProtectedCRUD\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll

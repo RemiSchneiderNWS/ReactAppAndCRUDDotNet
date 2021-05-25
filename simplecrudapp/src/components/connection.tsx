@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme: Theme) =>
 export default function Connection() {
   const [Status, setStatus] = useState(true);
   const { user, setUser } = useContext(UserContext);
-  console.log(user);
+
   const {
     register,
     handleSubmit,

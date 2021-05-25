@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProtectedCRUD.Models;
 using System;
@@ -22,6 +23,7 @@ namespace ProtectedCRUD.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<matérial>>> GetMaterial()
         {
+           
             return await context.material.ToListAsync();
         }
 
