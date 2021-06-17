@@ -5,8 +5,8 @@ import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import { Button, Container } from "@material-ui/core";
 import { useForm } from "react-hook-form";
 import { useHistory } from "react-router";
-import User from "../models/User";
-import { Register } from "../services/AuthServices";
+import User from "../../models/User";
+import { Register } from "../../services/AuthServices";
 import { servicesVersion } from "typescript";
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({

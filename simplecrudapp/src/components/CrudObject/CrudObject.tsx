@@ -7,13 +7,13 @@ import {
 } from "@material-ui/core";
 import React, { useContext, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import material from "../models/Material";
+import material from "../../models/Material";
 import {
   DeleteMaterial,
   getListMaterial,
   PostMaterial,
   setNewNameMaterial,
-} from "../services/materialServices";
+} from "../../services/materialServices";
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     center: {
@@ -50,7 +50,7 @@ export default function CrudObject() {
   };
   return (
     <div>
-      <p>Exemple simple de CRUD complet</p>
+      <p data-testid="fifrolin">Exemple simple de CRUD complet</p>
       <form onSubmit={handleSubmit(onSubmit)} noValidate>
         <TextField
           {...register("name", { required: true })}

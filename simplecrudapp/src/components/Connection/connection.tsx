@@ -5,10 +5,10 @@ import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import { Button, Container } from "@material-ui/core";
 import { useForm } from "react-hook-form";
 import { useHistory } from "react-router";
-import { login } from "../services/AuthServices";
-import User from "../models/User";
+import { login } from "../../services/AuthServices";
+import User from "../../models/User";
 
-import { UserContext } from "../services/context/UserContext";
+import { UserContext } from "../../services/context/UserContext";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({

@@ -42,7 +42,7 @@ namespace ProtectedCRUD.Controllers
         }
 
         [HttpPost("login")]
-        public ActionResult<String> Login(User userSearch)
+        public ActionResult<User> Login(User userSearch)
         {
            
             User userIdentificated = context.user.Where(user => user.email.Equals(userSearch.email) && user.password.Equals(userSearch.password)).FirstOrDefault();
@@ -67,8 +67,9 @@ namespace ProtectedCRUD.Controllers
                 expires: DateTime.Now.AddMinutes(20),
                 signingCredentials: signingCredentials);
             //HttpContext.Session.SetString("UserMail", userIdentificated.email);
-            
-            return Ok(new JwtSecurityTokenHandler().WriteToken(token));
+
+            //return Ok(new JwtSecurityTokenHandler().WriteToken(token));
+            return userIdentificated;
         }
 
         [HttpGet("userlist")]

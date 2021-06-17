@@ -7,7 +7,7 @@ import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import { useHistory } from "react-router-dom";
-import { UserContext } from "../services/context/UserContext";
+import { UserContext } from "../../services/context/UserContext";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({

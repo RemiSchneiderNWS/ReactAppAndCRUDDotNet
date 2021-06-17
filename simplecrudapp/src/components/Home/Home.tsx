@@ -1,8 +1,8 @@
 import { Button } from "@material-ui/core";
 import React, { useContext } from "react";
 import { useHistory } from "react-router-dom";
-import { getUserConnected } from "../services/AuthServices";
-import { UserContext } from "../services/context/UserContext";
+import { getUserConnected } from "../../services/AuthServices";
+import { UserContext } from "../../services/context/UserContext";
 
 export default function Home() {
   const { user, setUser } = useContext(UserContext);

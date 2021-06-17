@@ -1,17 +1,17 @@
 import React, { useMemo, useState } from "react";
 
 import "./App.css";
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar/navbar";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import Connection from "./components/connection";
+import Connection from "./components/Connection/connection";
 import { ThemeProvider } from "@material-ui/styles";
 import { createMuiTheme, useMediaQuery } from "@material-ui/core";
-import SignUp from "./components/SignUp";
-import Home from "./components/Home";
-import SignUpSuccess from "./components/SignUpSuccess";
+import SignUp from "./components/SignUp/SignUp";
+import Home from "./components/Home/Home";
+import SignUpSuccess from "./components/SignUp/SignUpSuccess";
 import { UserContext } from "./services/context/UserContext";
-import CrudObject from "./components/CrudObject";
+import CrudObject from "./components/CrudObject/CrudObject";
 
 function App() {
   const theme = React.useMemo(
